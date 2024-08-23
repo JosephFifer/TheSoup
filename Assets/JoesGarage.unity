@@ -8663,12 +8663,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e7b5bfc4e711f9049b4ad03ade500a21, type: 2}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1205437300}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleRecording
       objectReference: {fileID: 0}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8680,15 +8700,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGesture
+      value: ToggleRecording
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CloudGestureRecognizer, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CloudGestureRecognizer, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 662732340936656679, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -8766,6 +8798,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmUp
       objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFingerPointerEnabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFingerPointerEnabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FingerPointer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FingerPointer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339904771067707215, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7278311989217365588, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_TargetTransform
       value: 
@@ -8792,7 +8884,7 @@ PrefabInstance:
       objectReference: {fileID: 1074891768}
     - target: {fileID: 7739583635787928338, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7739583635787928338, guid: e9dd438cf406283449d10ee4156169ff, type: 3}
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -14967,6 +15059,63 @@ Transform:
   - {fileID: 1215976193}
   m_Father: {fileID: 1147398788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1832956160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2468407835146550639, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_Name
+      value: Television
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.868
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466365382538068960, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d44840b7d8d473a4195a3700f9408c3d, type: 3}
 --- !u!1 &1836721665
 GameObject:
   m_ObjectHideFlags: 0
@@ -17790,3 +17939,4 @@ SceneRoots:
   - {fileID: 1160234427}
   - {fileID: 1023246083}
   - {fileID: 699492013}
+  - {fileID: 1832956160}

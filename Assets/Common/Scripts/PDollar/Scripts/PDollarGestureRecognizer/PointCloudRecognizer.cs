@@ -138,8 +138,6 @@ namespace PDollarGestureRecognizer
                 for(int j = 0; j < n; j++)
                     if (!matched[j])
                     {
-                        Debug.Log("A " + points1[i]);
-                        Debug.Log("B " + points2[j]);
                         float dist = Geometry.SqrEuclideanDistance(points1[i], points2[j]);  // use squared Euclidean distance to save some processing time
                         if (dist < minDistance)
                         {

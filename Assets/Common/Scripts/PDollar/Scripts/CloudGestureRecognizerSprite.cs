@@ -23,7 +23,6 @@ public class CloudGestureRecognizerSprite : MonoBehaviour {
 	private BoxCollider drawSpace;
 
 	private RuntimePlatform platform;
-	private int vertexCount = 0;
 
 	private bool recognized;
 
@@ -89,8 +88,6 @@ public class CloudGestureRecognizerSprite : MonoBehaviour {
 				}
 
 				++strokeId;
-				
-				vertexCount = 0;
 
 				points.Add(new Point(virtualKeyPosition.x, -virtualKeyPosition.y, -virtualKeyPosition.z, strokeId));
 			}

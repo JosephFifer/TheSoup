@@ -6,6 +6,7 @@ using System.IO;
 
 using PDollarGestureRecognizer;
 using System.Runtime.CompilerServices;
+using UnityEngine.Networking.PlayerConnection;
 
 public class CloudGestureRecognizer : MonoBehaviour {
 
@@ -13,6 +14,7 @@ public class CloudGestureRecognizer : MonoBehaviour {
 	public GameObject stylus;
 	private bool gestureStarted = false;
 	private bool isDrawing = false;
+	private bool recording = false;
 
 	private List<Gesture> trainingSet = new List<Gesture>();
 
@@ -29,15 +31,13 @@ public class CloudGestureRecognizer : MonoBehaviour {
 	private List<LineRenderer> gestureLinesRenderer = new List<LineRenderer>();
 	private LineRenderer currentGestureLineRenderer;
 
-	private bool recognized;
-
 	void Start () {
 
 		drawArea = new Rect(0, 0, Screen.width - Screen.width / 3, Screen.height);
 		drawSpace = GameObject.Find("GestureArea").GetComponent<BoxCollider>();
 		
 		//Load pre-made gestures
-		TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/10-stylus-MEDIUM/");
+		TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/GestureXML/");
 		foreach (TextAsset gestureXml in gesturesXml)
         {
             Debug.Log("Gesture Loaded: " + gestureXml.name);
@@ -65,20 +65,37 @@ public class CloudGestureRecognizer : MonoBehaviour {
 		gestureStarted = true;
     }
 
+	public void ToggleRecording(bool toggleRecording)
+	{
+		recording = toggleRecording;
+	}
+
 	public void FinishGesture()
 	{
 		if (gestureStarted)
 		{
 			Debug.Log("Gesture Finished - Checking...");
+			string message;
 			gestureStarted = false;
-			recognized = true;
 
-			Gesture candidate = new Gesture(points.ToArray());
-			Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
+			if (!recording)
+			{
+				Gesture candidate = new Gesture(points.ToArray());
+				Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
 
-			string message = gestureResult.GestureClass + " " + gestureResult.Score;
+				message = gestureResult.GestureClass + " " + gestureResult.Score;
+			} else
+			{
+                string newGestureName = "shmendrick";
+                string fileName = String.Format("{0}/{1}-{2}.xml", Application.persistentDataPath, newGestureName, DateTime.Now.ToFileTime());
 
-			strokeId = -1;
+                GestureIO.WriteGesture(points.ToArray(), newGestureName, fileName);
+                message = "SAVING " + fileName;
+                trainingSet.Add(new Gesture(points.ToArray(), newGestureName));
+
+            }
+
+            strokeId = -1;
 			points.Clear();
 
 			Debug.Log(message);
@@ -87,6 +104,7 @@ public class CloudGestureRecognizer : MonoBehaviour {
 
 	public void StartDrawing()
 	{
+		StartGesture();
 		if (gestureStarted)
 		{
 			isDrawing = true;
@@ -111,6 +129,7 @@ public class CloudGestureRecognizer : MonoBehaviour {
 			Debug.Log("Finished Stroke " + strokeId);
 			isDrawing = false;
 		}
+		FinishGesture();
     }
 
 	void Update () {
